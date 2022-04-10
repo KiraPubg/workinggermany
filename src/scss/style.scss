@@ -13,10 +13,6 @@ body.no-skroll {
 	overflow: hidden;
 }
 
-section {
-	padding: 0 10px;
-}
-
 .container {
 	max-width: 1180px;
 	/** +15px */
@@ -60,7 +56,12 @@ section {
 		padding: 17.5px 5px;
 		text-align: center;
 	}
+
+	&:link {
+		color: #fff;
+	}
 }
+
 
 /*! global */
 
@@ -376,7 +377,13 @@ section {
 	position: absolute;
 	left: -47px;
 	top: 50%;
+	max-width: 587px;
+	width: 100%;
 	transform: translate(0, -55%);
+
+	@media (min-width: 1399.98px) {
+		max-width: 1000px;
+	}
 
 	@media (max-width: 1124.98px) {
 		position: static;
@@ -405,6 +412,10 @@ section {
 
 	&-text {
 		margin-top: 20px;
+	}
+
+	@media (min-width: 1399.98px) {
+		max-width: 100%
 	}
 
 	@media (max-width: 991.98px) {
@@ -849,6 +860,12 @@ section {
 	margin: 51px auto 74px;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .benefits {
 	&__title {
 		text-align: center;
@@ -859,6 +876,7 @@ section {
 		max-width: 744px;
 		margin: 13px auto 0;
 		font-weight: 500;
+		max-width: 1440px;
 	}
 
 	&__body {
@@ -867,6 +885,7 @@ section {
 		padding: 65px 173px 77px 173px;
 
 		&-title {
+			max-width: 1440px;
 			text-align: start;
 			text-transform: capitalize;
 		}
@@ -886,10 +905,12 @@ section {
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 35px;
 		grid-row-gap: 80px;
+		max-width: 1440px;
 
-		@media (max-width: 767.98px) {
+		@media (max-width: 991.98px) {
 			grid-template-columns: 1fr;
 			row-gap: 35px;
+
 		}
 	}
 
@@ -905,7 +926,7 @@ section {
 }
 
 .recruitment {
-	padding: 58px 10px 99px;
+
 
 	&__body {
 		max-width: 1160px;
@@ -955,9 +976,15 @@ section {
 
 	&__body {
 		padding: 70px 0 64px 212px;
+		max-width: 1440px;
 
 		@media (max-width: 767.98px) {
 			padding: 39px 81px 29px 44px;
+		}
+
+		@media (min-width: 1399.98px) {
+			padding: 70px 20 64px 20;
+
 		}
 	}
 

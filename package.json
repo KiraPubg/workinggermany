@@ -8,7 +8,7 @@
     "dev": "gulp",
     "build": "gulp-build --build"
   },
-  "author": "kirapubg",
+  "author": "kirapu",
   "license": "ISC",
   "dependencies": {
     "gulp-cli": "^2.3.0"
