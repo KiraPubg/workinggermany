@@ -6,6 +6,7 @@ const srcFolder = "./src";
 
 export const path = {
 	build: {
+		jsLibs: `${buildFolder}/js/libs/`,
 		fonts: `${buildFolder}/fonts/`,
 		images: `${buildFolder}/img/`,
 		js: `${buildFolder}/js/`,
@@ -14,15 +15,18 @@ export const path = {
 		files: `${buildFolder}/files/`,
 	},
 	src: {
-		images: `${srcFolder}/img/**/*.{jpg, jpeg, webp, gif, png, ico}`,
+		jsLibs: `${srcFolder}/js/libs/*.js`,
+		fonts: `${srcFolder}/fonts/*.{ttf,otf,svg,eot,woff,woff2}`,
+		images: `${srcFolder}/img/**/*.{jpg,jpeg,webp,gif,png,ico}`,
 		svg: `${srcFolder}/img/**/*.svg`,
-		js: `${srcFolder}/js/main.js`,
-		scss: `${srcFolder}/scss/style.scss`,
+		js: `${srcFolder}/js/**/*.js`,
+		scss: `${srcFolder}/scss/*.scss`,
 		html: `${srcFolder}/*.html`,
 		files: `${srcFolder}/files/**/*.*`,
 	},
 	watch: {
-		images: `${srcFolder}/img/**/*.{jpg, jpeg, webp, gif, png, ico, svg, SVG}`,
+		fonts: `${srcFolder}/fonts/*.{ttf,otf,svg,eot,woff,woff2}`,
+		images: `${srcFolder}/img/**/*.{jpg,jpeg,webp,gif,png,ico,svg,SVG}`,
 		js: `${srcFolder}/js/**/*.js`,
 		scss: `${srcFolder}/scss/**/*.scss`,
 		html: `${srcFolder}/**/*.html`,
